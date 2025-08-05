@@ -7,7 +7,7 @@ import { match } from "path-to-regexp";
 
 export default function Menu() {
   const pathname = usePathname();
-  console.log('pathname', pathname);
+  // console.log('pathname', pathname);
 
   // const segment = useSelectedLayoutSegment();
   // console.log('segment', segment);

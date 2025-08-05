@@ -18,4 +18,8 @@ export const MENU: IMenuItem[] = [
     href: PAGES.PROFILE_FAKE,
     name: 'Profile Fake'
   },
+  {
+    href: PAGES.SHOP,
+    name: 'Shop'
+  },
 ];

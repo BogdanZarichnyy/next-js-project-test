@@ -1,5 +1,18 @@
+import type { Metadata } from "next";
+
 type Params = {
   username: string
+}
+
+// http://localhost:3000/user/dkfjng/test
+export async function generateMetadata({ // динамічна підгрузка SEO даних
+  params
+}: {
+  params: Promise<Params>
+}): Promise<Metadata> {
+  return {
+    title: '@' + (await params).username
+  }
 }
 
 export default async function TestPage({
